@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../html"
+		},
+		{
+			"path": "../../BM- Tarde"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BM- Tarde"
+	}
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de transporte</title>
+  </head>
+
+  <body style="background-color: rgba(0, 255, 255, 0.397)">
+    <header>
+      <h1>Formulario de transporte</h1>
+    </header>
+    <article>
+      <!--Início do Formulário com a tag <form>-->
+      <!--Atributo action refere-se ao destino do formulário-->
+      <form action="mailto: kaio.grfreitas@gmail.com"
+      method="post" id="fcontato"
+      oninput="result.value=parseInt(valor01.value)+parseInt(valor02.value)">
+        <fieldset>
+          <legend>indentificação:</legend>
+          <!--label é o rotulo do input-->
+          <label for="tNome">Nome:</label>
+          <!--input para digitação do usuario-->
+          <input
+            type="text"
+            size="50"
+            name="nome"
+            id="tNome"
+            required="required"
+          />
+          <br /><br />
+          <p>Você mora?</p>
+          <!--input para selecionar dentre as opções-->
+          <input type="radio" name="tipo" id="city" value="c" />
+          <label for="city">cidade</label><br />
+          <input type="radio" name="tipo" id="downtown" value="D" />
+          <label for="downtown">Interior</label>
+        </fieldset>
+
+        <br /><br />
+
+        <fieldset>
+          <legend>Informação extra</legend>
+          <p>Qual meio de transporte vc usa:</p>
+          <!--Input para selecionar mútiplas opções-->
+          <input
+            type="checkbox"
+            id="transporte1"
+            name="transporte1"
+            value="Bike"
+          />
+
+          <label for="transporte1"> Bicicleta</label><br />
+          <input
+            type="checkbox"
+            id="transporte2"
+            name="transporte2"
+            value="Car"
+          />
+
+          <label for="transporte2"> Carro</label><br />
+          <input
+            type="checkbox"
+            id="transporte3"
+            name="transporte3"
+            value="Metro"
+          />
+
+          <label for="transporte3"> Metrô</label><br />
+          <input
+            type="checkbox"
+            id="transporte4"
+            name="transporte4"
+            value="Bus"
+          />
+          <label for="transporte4"> Ônibus</label> <br /><br />
+          <label for="time">escolha seu time:</label>
+          <select id="time" name="time">
+            <option value="náutico">Náutico</option>
+            <option value="sport">Sport</option>
+            <option value="corinthians">Corinthians</option>
+            <option value="gremio">Grêmio</option>
+            <option value="goiás">Goiás</option>
+            <option value="santos">Santa-cruz</option></select
+          ><br /><br />
+          <label for="cCid">Escolha a sua Cidade na lista:</label>
+          <input
+            autocomplete="on"
+            list="cidade"
+            name="tCid"
+            id="cCid"
+            placeho
+            lder="Sua Cidade"
+          />
+          <datalist id="cidade">
+            <option value="Olinda"></option>
+            <option value="Recife"></option>
+            <option value="Igarassu"></option>
+            <option value="Goiânia"></option>
+            <option value="Gabriella"></option>
+          </datalist>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Idade:</legend>
+          0
+          <input type="range" name="valor01" id="valor01" />
+          100 +
+          <input type="number" name="valor02" id="valor02" volue="50">
+          =
+          <output name="result" for="valor01 valor02"></output>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Sua opinião:</legend>
+          <p>Sugestões, elogios e críticas:</p>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="deixe aqui a sua mensagem!"
+            required
+          >
+          </textarea>
+        </fieldset>
+
+        <br /><br />
+        <!--input gera botão  e volue para definir seu nome-->
+        <input type="submit" value="Enviar" />
+      </form>
+    </article>
+    <br><br><hr>
+    <footer>
+      <small>@Kaio.grf</small>
+    </footer>
+  </body>
+</html>
